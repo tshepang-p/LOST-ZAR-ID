@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find ID</title>
+
+    <link rel="stylesheet" href="find_card.css">
+
+    <script>
+
+    </script>
+
+
+</head>
+
+<body>
+
+
+    <div class = "main-container">
+    <section id="card">
+
+
+        <img id="flag" src="flag.png">
+        <br>
+        <input id="search_bar" type="search" placeholder="Enter ID number">
+        <br>
+        <button id="btn_search" onclick="openForm()">search</button>
+        <span class="overlay"></span>
+
+
+
+
+
+    </section>
+
+
+
+
+
+    <div class="form-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+
+
+            <h1>id number</h1>
+            <p>id name</p>
+
+
+
+            <p>id surname</p>
+
+
+            <br>
+            <hr><br>
+
+
+
+            <h1>Found by</h1>
+            <p>finder name</p>
+            <p>finder surname</p>
+            <p>phone number</p>
+            <p>email address</p>
+
+
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+
+
+    </div>
+    <script>
+
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
+
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
+    </script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+
+<?php
+include 'connection.php';
+?>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find ID</title>
+
+    <link rel="icon" href="icon.png">
+
+    <link rel="stylesheet" href="submit_card.css">
+    <script src="id-validate.js"></script>
+    
+</head>
+
+<header>
+
+    <ul class = "header-item-container"><img id = "logo" src = "icon.png"></ul>
+    
+    <ul class = "header-item-container2">
+        <a class = "link" href = "index.php">Find</a>
+        <a class = "link" href = "submit_card.php">Submit</a>
+        <a class = "link" href = "index.php">About</a>
+    </ul>
+</header>
+
+
+<body>
+<div>
+
+<form id="card" action="submit.php" method="POST">
+
+    <h>ID Information</h><br>
+    <input type="text" placeholder="Surname" class="input" name="id_surname" id="txt_ID_surname"><br>
+    <label class="lbl" id="lbl_ID_surname"></label><br>
+
+    <input type="text" placeholder="Names" class="input" name="id_name" id="txt_ID_name"><br>
+    <label class="lbl" id="lbl_ID_name"></label><br>
+
+    <input type="text" placeholder="ID number" class="input" name="id_number" id="txt_ID"><br>
+    <label class="lbl" id="lbl_ID_number"></label><br>
+
+    <hr>
+
+    <h>Founder Information</h><br>
+    <input type="text" placeholder="Name" class="input" name="finder_name" id="_finder_name"><br>
+    <label class="lbl" id="lbl_name"></label><br>
+
+    <input type="text" placeholder="Surname" class="input" name="finder_surname" id="finder_surname"><br>
+    <label class="lbl" id="lbl_surname"></label><br>
+
+    <input type="text" placeholder="Phone number" class="input" name="finder_phone_number" id="finder_phone_number"><br>
+    <label class="lbl" id="lbl_phone_number"></label><br>
+
+    <input type="text" placeholder="Email address" class="input" name="finder_email" id="finder_email"><br>
+    <label class="lbl" id="lbl_email_address"></label><br>
+
+    <button type="submit">Submit</button>
+
+</form>
+    </div>
+</body>
+
+
+
+</html>
